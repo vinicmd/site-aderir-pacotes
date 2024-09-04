@@ -1,0 +1,55 @@
+.priceBox {
+  background-color: #4560d6;
+  width: 215px;
+  height: 100px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: right;
+  color: #fff;
+  font-weight: 900;
+}
+
+.first p {
+  color: #fff;
+  font-size: 12px;
+}
+
+.first .currency {
+  font-size: 40px;
+}
+
+.second {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.second h2 {
+  color: #fff;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.second .separator {
+  color: #fff;
+  font-size: 45px;
+}
+
+.third {
+  font-size: 25px;
+  color: #fff;
+  text-align: left;
+}
+
+.third span {
+  font-size: 35px;
+  color: #fff;
+}
+
+.month {
+  color: #fff;
+  font-size: 20px;
+}

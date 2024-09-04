@@ -1,0 +1,33 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+.title span {
+  font-size: 18px;
+}
+
+.title h2 {
+  font-size: 45px;
+}
+
+.title div {
+  width: 12%;
+  background-color: #bad80a;
+  height: 1px;
+}
+
+.offerFiber {
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 10px;
+  padding: 0 10px;
+}
+
+.emailContainer {
+  margin: 30px 0;
+}

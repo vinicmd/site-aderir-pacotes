@@ -1,0 +1,201 @@
+.header {
+  background-color: #f9c500;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 12px 16px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 185px;
+  height: auto;
+}
+
+.contactContainer {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.contact {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.openingHours {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.subtitle {
+  margin-top: 20px;
+  width: 60%;
+}
+
+.subtitle h1 {
+  color: #153197;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.types {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.types span {
+  font-size: 60px;
+  text-align: left;
+  color: #153197;
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.emailContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-self: flex-end;
+  width: 100%;
+  max-width: 550px;
+}
+
+.formEmail {
+  width: 100%;
+}
+
+.emailBox {
+  color: white;
+  width: 100%;
+  padding: 40px 20px;
+  background-color: #193096;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.form {
+  width: 100%;
+}
+
+.emailBox input {
+  background-color: white;
+  color: black;
+  padding: 4px;
+  font-size: 16px;
+  border: none;
+  width: 70%;
+}
+
+.emailBox p {
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.emailBox button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 4px 16px;
+  font-size: 16px;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .logo {
+    width: 120px;
+  }
+
+  .openingHours {
+    width: 60%;
+    font-size: 10px;
+  }
+
+  .subtitle {
+    width: 100%;
+  }
+
+  .subtitle h1 {
+    text-align: center;
+  }
+
+  .subtitle h1 {
+    font-size: 35px;
+  }
+
+  .types {
+    align-items: center;
+  }
+
+  .types span {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .emailContainer {
+    flex-direction: column;
+    width: 100%;
+    max-width: none;
+  }
+
+  .emailBox {
+    width: 100%;
+  }
+
+  .emailBox p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .emailBox input {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .emailBox button {
+    padding: 8px 32px;
+  }
+
+  .details {
+    margin-top: 20px;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .emailBox input {
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .emailBox p {
+    text-align: center;
+  }
+  .emailContainer {
+    max-width: 400px;
+  }
+}
