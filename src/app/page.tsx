@@ -20,23 +20,23 @@ const offersFiber = [
     id: 2,
     name: `${showNOSName ? "N​O​S " : "Fibra "} 3`,
     lastPrice: "€42,49",
-    price: "€29,49/mês",
+    price: "€37,49/mês",
     description:
       "150 Canais + Box TV 4K + Net de 200Mbps ilimitada Fixo com chamadas incluídas",
     offerText: "Oferta de adesão disponível",
     benefices:
-      "Desconto de €13/4 meses ou desconto €3 durante 24 meses ou 1 Mensalidade ou Desconto €50 portátil ou Vale desconto €100 Smartphone.",
+      "Desconto de €5 durante 24 meses ou 1 Mensalidade ou Desconto €50 portátil ou Vale desconto €100 Smartphone.",
   },
   {
     id: 3,
     name: `${showNOSName ? "N​O​S " : "Fibra "} 3`,
     lastPrice: "€45,49",
-    price: "€32,49/mês",
+    price: "€40,49/mês",
     description:
       "180 Canais + Box TV 4K + Net de 500Mbps ilimitada Fixo com chamadas incluídas",
     offerText: "Oferta de adesão disponível",
     benefices:
-      "Desconto €13/4 meses ou desconto €3 durante 24 meses ou 1 Mensalidade ou Desconto €50 portátil ou Vale desconto €100 Smartphone",
+      "Desconto €5 durante 24 meses ou 1 Mensalidade ou Desconto €50 portátil ou Vale desconto €100 Smartphone",
   },
   {
     id: 4,
