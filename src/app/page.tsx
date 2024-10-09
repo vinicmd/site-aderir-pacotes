@@ -20,34 +20,33 @@ const offersFiber = [
     id: 2,
     name: `${showNOSName ? "N​O​S " : "Fibra "} 3`,
     lastPrice: "€42,49",
-    price: "€37,49/mês",
+    price: "€29,49/mês",
     description:
       "150 Canais + Box TV 4K + Net de 200Mbps ilimitada Fixo com chamadas incluídas",
     offerText: "Oferta de adesão disponível",
     benefices:
-      "Desconto de €5 durante 24 meses ou 1 Mensalidade ou Desconto €50 portátil ou Vale desconto €100 Smartphone.",
+      "Desconto €13/4 meses ou desconto €5 durante 24 meses ou 1 Mensalidade ou Desconto €50 portátil ou Vale desconto €100 Smartphone.",
   },
   {
     id: 3,
     name: `${showNOSName ? "N​O​S " : "Fibra "} 3`,
     lastPrice: "€45,49",
-    price: "€40,49/mês",
+    price: "€32,49/mês",
     description:
       "180 Canais + Box TV 4K + Net de 500Mbps ilimitada Fixo com chamadas incluídas",
     offerText: "Oferta de adesão disponível",
     benefices:
-      "Desconto €5 durante 24 meses ou 1 Mensalidade ou Desconto €50 portátil ou Vale desconto €100 Smartphone",
+      "Desconto €13/4 meses ou desconto €5 durante 24 meses ou 1 Mensalidade ou Desconto €50 portátil ou Vale desconto €100 Smartphone",
   },
   {
     id: 4,
     name: `${showNOSName ? "N​O​S " : "Fibra "} 4`,
-    lastPrice: "€51,49",
-    price: "€48,49/mês",
+    lastPrice: "",
+    price: "€47,49/mês",
     description:
-      "180 Canais + Box TV 4K + Net de 500Mbps ilimitada Fixo com chamadas incluídas + 1 cartão 20GB e 3500 Minutos/SMS",
+      "150 Canais + Box TV 4K + Net de 200Mbps ilimitada Fixo com chamadas incluídas + 1 cartão 10GB e 3500 Minutos/SMS",
     offerText: "Oferta de adesão disponível",
-    benefices:
-      "Desconto €3 durante 24 meses ou 1 Mensalidade ou Portátil ou TV ou Smartphone",
+    benefices: "1 Mensalidade ou Portátil ou TV ou Smartphone",
   },
 ];
 
