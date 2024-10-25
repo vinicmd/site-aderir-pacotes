@@ -25,7 +25,7 @@ const offersFiber = [
       "150 Canais + Box TV 4K + Net de 200Mbps ilimitada Fixo com chamadas incluídas",
     offerText: "Oferta de adesão disponível",
     benefices:
-      "Desconto €13/4 meses ou desconto €5 durante 24 meses ou 1 Mensalidade ou Desconto €50 portátil ou Vale desconto €100 Smartphone.",
+      "Desconto €13/4 meses ou desconto €5 durante 24 meses ou 1 Mensalidade ou Desconto €150 portátil ou Vale desconto €150 Smartphone.",
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const offersFiber = [
       "180 Canais + Box TV 4K + Net de 500Mbps ilimitada Fixo com chamadas incluídas",
     offerText: "Oferta de adesão disponível",
     benefices:
-      "Desconto €13/4 meses ou desconto €5 durante 24 meses ou 1 Mensalidade ou Desconto €50 portátil ou Vale desconto €100 Smartphone",
+      "Desconto €13/4 meses ou desconto €5 durante 24 meses ou 1 Mensalidade ou Desconto €150 portátil ou Vale desconto €150 Smartphone",
   },
   {
     id: 4,
@@ -107,6 +107,11 @@ export default function Home() {
               />
             );
           })}
+        </div>
+        <div className={styles.disclaimer}>
+          <p>
+            Ofertas mediante pagamento por débito direto e ativação de fatura
+          </p>
         </div>
         <div className={styles.title}>
           <span>{`Pacotes ${showNOSName ? "N​O​S" : "de Internet"}`}</span>

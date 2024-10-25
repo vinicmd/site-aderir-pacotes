@@ -31,3 +31,12 @@
 .emailContainer {
   margin: 30px 0;
 }
+
+.disclaimer {
+  width: 100%;
+}
+
+.disclaimer p {
+  text-align: center;
+  font-style: italic;
+}
