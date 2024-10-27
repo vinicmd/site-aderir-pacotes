@@ -3,7 +3,7 @@ import { SendEmail } from "@/services/send-email";
 import { redirect } from "next/navigation";
 import { SubmitButton } from "../submit-button/submit-button";
 
-export const EmailForm = () => {
+export const EmailForm = ({ showMessage = true }) => {
   async function handleSendEmail(formData: FormData) {
     "use server";
 
@@ -22,8 +22,8 @@ export const EmailForm = () => {
 
   return (
     <section className={styles.email}>
-      <h2>Temos cobertura para sua região!</h2>
-      <h2>Fale com um operador especializado.</h2>
+      {showMessage && <h2>Já temos cobertura na sua região!</h2>}
+      <p>Fale com um operador especializado.</p>
       <div className={styles.emailForm}>
         <form action={handleSendEmail}>
           <input placeholder="Nome" type="text" name="name" required />

@@ -72,6 +72,7 @@
 
 .formEmail {
   width: 100%;
+  display: flex;
 }
 
 .emailBox {
@@ -191,6 +192,17 @@
   .emailBox input {
     text-align: center;
   }
+
+  .formEmail {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* .formEmail button {
+    padding: 4px 24px;
+  } */
 }
 
 @media (max-width: 900px) {

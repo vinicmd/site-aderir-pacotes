@@ -1,12 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
+import { redirect } from "next/navigation";
 import styles from "./header.module.css";
 import { PriceBox } from "../price-box/price-box";
-import { EmailFormHeader } from "../email-form-header/email-form-header";
 import { showNOSName } from "@/util/showNOSName";
-import { SubmitButton } from "../submit-button/submit-button";
+import { FormHeader } from "../formHeader/formHeader";
 
 export const Header = ({ isComplete = true }) => {
+  async function handleForm(formData: FormData) {
+    redirect("/obrigado");
+  }
   return (
     <header className={styles.header}>
       <div className={styles.container}>
@@ -47,35 +50,17 @@ export const Header = ({ isComplete = true }) => {
             <div className={styles.details}>
               <div className={styles.emailContainer}>
                 <div className={styles.emailBox}>
-                  <p>
-                    Se ainda não é cliente, insere o teu <b>Código Postal</b>{" "}
-                    para validarmos se há cobertura.
-                  </p>
-                  <div className={styles.formEmail}>
-                    <input
-                      required
-                      placeholder="Código Postal"
-                      type="tel"
-                      inputMode="tel"
-                      name="telephone"
-                      maxLength={8}
-                      minLength={8}
-                    />
-                    <Link href="/contacto">
-                      <button className={styles.button} type="submit">
-                        Aderir N​O​S
-                      </button>
-                    </Link>
-                  </div>
+                  <p>Teste agora a cobertura NOS na sua localidade</p>
+                  <FormHeader />
                 </div>
               </div>
 
-              <div className={styles.types}>
+              {/* <div className={styles.types}>
                 <span>TV NET VOZ</span>
                 <a href="/#offers">
                   <PriceBox />
                 </a>
-              </div>
+              </div> */}
             </div>
           </>
         )}

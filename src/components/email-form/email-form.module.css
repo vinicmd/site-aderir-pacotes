@@ -11,8 +11,12 @@
 }
 
 .email h2 {
-  font-size: 30px;
+  font-size: 32px;
   text-align: center;
+}
+.email p {
+  font-size: 26px;
+  font-weight: bold;
 }
 
 .emailForm {

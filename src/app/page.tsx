@@ -134,7 +134,7 @@ export default function Home() {
           })}
         </div>
         <div className={styles.emailContainer}>
-          <EmailForm />
+          <EmailForm showMessage={false} />
         </div>
       </main>
       <Footer />
