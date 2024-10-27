@@ -55,12 +55,12 @@ export const Header = ({ isComplete = true }) => {
                 </div>
               </div>
 
-              {/* <div className={styles.types}>
+              <div className={styles.types}>
                 <span>TV NET VOZ</span>
-                <a href="/#offers">
+                {/* <a href="/#offers">
                   <PriceBox />
-                </a>
-              </div> */}
+                </a> */}
+              </div>
             </div>
           </>
         )}
