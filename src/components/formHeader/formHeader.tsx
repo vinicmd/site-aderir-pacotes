@@ -18,8 +18,8 @@ export const FormHeader = () => {
         type="tel"
         inputMode="tel"
         name="telephone"
-        maxLength={8}
-        minLength={8}
+        maxLength={7}
+        minLength={7}
       />
       <button className={styles.button} type="submit">
         Verificar
