@@ -8,7 +8,7 @@ export default function Contact() {
       <Header isComplete={false} />
       <main>
         <h1>Obrigado!</h1>
-        <p>Em instantes nossa equipa entrará em contacto convosco.</p>
+        <p>Em instantes nossa equipa entrará em contacto consigo.</p>
         <Link className={styles.link} href="/">
           Voltar ao Inicio
         </Link>
