@@ -103,7 +103,9 @@
   font-size: 17px;
   font-weight: 600;
 }
-
+.emailBox p b {
+  color: white;
+}
 .emailBox button {
   background-color: black;
   color: white;

@@ -4,6 +4,7 @@ import styles from "./header.module.css";
 import { PriceBox } from "../price-box/price-box";
 import { EmailFormHeader } from "../email-form-header/email-form-header";
 import { showNOSName } from "@/util/showNOSName";
+import { SubmitButton } from "../submit-button/submit-button";
 
 export const Header = ({ isComplete = true }) => {
   return (
@@ -47,11 +48,24 @@ export const Header = ({ isComplete = true }) => {
               <div className={styles.emailContainer}>
                 <div className={styles.emailBox}>
                   <p>
-                    Se ainda não é cliente, insere o teu número que nós te
-                    ligamos.
+                    Se ainda não é cliente, insere o teu <b>Código Postal</b>{" "}
+                    para validarmos se há cobertura.
                   </p>
                   <div className={styles.formEmail}>
-                    <EmailFormHeader />
+                    <input
+                      required
+                      placeholder="Código Postal"
+                      type="tel"
+                      inputMode="tel"
+                      name="telephone"
+                      maxLength={8}
+                      minLength={8}
+                    />
+                    <Link href="/contacto">
+                      <button className={styles.button} type="submit">
+                        Aderir N​O​S
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>

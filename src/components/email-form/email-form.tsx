@@ -22,6 +22,7 @@ export const EmailForm = () => {
 
   return (
     <section className={styles.email}>
+      <h2>Temos cobertura para sua região!</h2>
       <h2>Fale com um operador especializado.</h2>
       <div className={styles.emailForm}>
         <form action={handleSendEmail}>
