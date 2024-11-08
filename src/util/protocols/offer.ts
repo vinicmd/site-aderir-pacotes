@@ -5,4 +5,5 @@ export interface Offer {
   description: string;
   offerText: string | undefined;
   benefices: string | undefined;
+  promo?: string | undefined;
 }

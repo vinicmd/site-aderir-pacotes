@@ -12,7 +12,10 @@ export const ComboDescription = (offer: Offer) => {
     <div className={`${styles.comboContainer} ${azoFont.className}`}>
       <div className={styles.priceSide}>
         <div className={styles.namePrice}>
-          <h2>{offer.name}</h2>
+          <div className={styles.priceTitle}>
+            <h2>{offer.name}</h2>
+            {offer.promo && <h3>{offer.promo}</h3>}
+          </div>
           <div className={styles.priceContainer}>
             {offer.lastPrice && <s>{`${offer.lastPrice}`}</s>}
             <span>{`${offer.lastPrice && " "}${offer.price}`}</span>

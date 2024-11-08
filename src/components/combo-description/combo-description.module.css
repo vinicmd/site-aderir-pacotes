@@ -19,8 +19,20 @@
   align-items: flex-start;
 }
 
+.priceTitle {
+  width: 100%;
+  padding: 0 40px 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
 .namePrice h2 {
   font-size: 22px;
+}
+
+.namePrice h3 {
+  font-size: 20px;
+  text-transform: capitalize;
 }
 
 .namePrice .priceContainer {

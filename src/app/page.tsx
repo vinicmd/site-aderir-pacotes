@@ -21,6 +21,7 @@ const offersFiber = [
     name: `${showNOSName ? "N​O​S " : "Fibra "} 3`,
     lastPrice: "€42,49",
     price: "€29,49/mês",
+    promo: "BLACK FRIDAY",
     description:
       "150 Canais + Box TV 4K + Net de 500Mbps ilimitada Fixo com chamadas incluídas",
     offerText: "Oferta de adesão disponível",
@@ -32,6 +33,7 @@ const offersFiber = [
     name: `${showNOSName ? "N​O​S " : "Fibra "} 3`,
     lastPrice: "€45,49",
     price: "€32,49/mês",
+    promo: "BLACK FRIDAY",
     description:
       "180 Canais + Box TV 4K + Net de 1Gbps ilimitada Fixo com chamadas incluídas",
     offerText: "Oferta de adesão disponível",
@@ -100,6 +102,7 @@ export default function Home() {
                 benefices={offer.benefices}
                 description={offer.description}
                 lastPrice={offer.lastPrice}
+                promo={offer.promo}
                 name={offer.name}
                 offerText={offer.offerText}
                 price={offer.price}
