@@ -116,13 +116,13 @@ export default function Home() {
             Ofertas mediante pagamento por débito direto e ativação de fatura eletrônica
           </p>
         </div>
-        <div className={styles.title}>
+        {/* <div className={styles.title}>
           <span>{`Pacotes ${showNOSName ? "N​O​S" : "de Internet"}`}</span>
           <h2>Satélite</h2>
           <div></div>
         </div>
         <div className={styles.offerFiber}>
-          {/* offersSatellite.map((offer) => {
+          {offersSatellite.map((offer) => {
             return (
               <ComboDescription
                 benefices={offer.benefices}
@@ -134,8 +134,8 @@ export default function Home() {
                 key={offer.id}
               />
             );
-          }) */}
-        </div>
+          })}
+        </div>*/}
         <div className={styles.emailContainer}>
           <EmailForm showMessage={false} />
         </div>
