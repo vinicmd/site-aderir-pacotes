@@ -43,8 +43,7 @@ export const Header = ({ isComplete = true }) => {
           <>
             <div className={styles.subtitle}>
               <h1>
-                Aderir Pacotes de Internet {showNOSName && "N​O​S "}Fibra ou
-                Satélite ao melhor preço de sempre
+                Aderir Pacotes de Internet {showNOSName && "N​O​S "}Fibra ao melhor preço de sempre
               </h1>
             </div>
             <div className={styles.details}>
