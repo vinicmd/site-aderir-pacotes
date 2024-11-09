@@ -122,7 +122,7 @@ export default function Home() {
           <div></div>
         </div>
         <div className={styles.offerFiber}>
-          {offersSatellite.map((offer) => {
+          {/* offersSatellite.map((offer) => {
             return (
               <ComboDescription
                 benefices={offer.benefices}
@@ -134,7 +134,7 @@ export default function Home() {
                 key={offer.id}
               />
             );
-          })}
+          }) */}
         </div>
         <div className={styles.emailContainer}>
           <EmailForm showMessage={false} />
