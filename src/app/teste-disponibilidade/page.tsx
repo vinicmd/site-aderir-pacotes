@@ -8,7 +8,7 @@ export default function Contact() {
     <div className={styles.container}>
       <Header isComplete={false} />
       <main>
-        <EmailForm showMessage={false} />
+        <EmailForm />
       </main>
       <Footer />
     </div>

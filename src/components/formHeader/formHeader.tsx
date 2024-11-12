@@ -7,7 +7,7 @@ export const FormHeader = () => {
 
     formData.set("", "");
 
-    redirect("/contacto");
+    redirect("/teste-disponiblidade");
   }
 
   return (
