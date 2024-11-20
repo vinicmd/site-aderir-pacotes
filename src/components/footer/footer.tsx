@@ -1,7 +1,7 @@
 import styles from "@/components/footer/footer.module.css";
 import Link from "next/link";
 export const Footer = () => {
-  const showFooter = false;
+  const showFooter = true;
   return (
     <footer className={styles.footer}>
       <div className={styles.main}>
