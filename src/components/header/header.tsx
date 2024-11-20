@@ -16,7 +16,7 @@ export const Header = ({ isComplete = true }) => {
         <div className={styles.title}>
           <Link href="/">
             <Image
-              src="/assets/logo.svg"
+              src="/assets/logo.png"
               className={styles.logo}
               alt="Logo"
               width={185}
