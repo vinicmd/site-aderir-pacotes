@@ -27,7 +27,7 @@ export const Footer = () => {
               <h2>Contacto</h2>
               <div className={styles.number}>
                 <Link href="tel:+351937787520" className={styles.contactNumber}>
-                  (+351) 937 787 520
+                  (+351) 935 884 616
                 </Link>
               </div>
               <div className={styles.email}>
