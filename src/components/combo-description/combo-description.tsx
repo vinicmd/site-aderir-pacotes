@@ -27,7 +27,7 @@ export const ComboDescription = (offer: Offer) => {
           </div>
           <div className={styles.buttonContainer}>
             <Link href="/contacto">
-              <div>Aderir NOS</div>
+              <div>Aderir</div>
             </Link>
           </div>
         </div>
