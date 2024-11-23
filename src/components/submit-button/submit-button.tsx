@@ -8,7 +8,7 @@ export function SubmitButton() {
 
   return (
     <button className={styles.button} disabled={pending} type="submit">
-      {pending ? "Enviando..." : "Aderir N​O​S "}
+      {pending ? "Enviando..." : "Aderir"}
     </button>
   );
 }
