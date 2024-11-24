@@ -16,18 +16,18 @@ export const metadata: Metadata = {
     "NOS INTERNET",
     "nos tv net voz",
   ],
-  title: "Aderir Pacotes N​O​S",
+  title: "Aderir Pacotes",
   description: "Aderir Pacotes de Internet ao melhor preço de sempre.",
   openGraph: {
-    title: "Aderir Pacotes N​O​S",
+    title: "Aderir Pacotes",
     description: "Aderir Pacotes de Internet ao melhor preço de sempre.",
-    url: "https://aderirpacotes.com/",
+    url: "https://aderirnos.com/",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    site: "https://aderirpacotes.com/",
-    title: "Aderir Pacotes N​O​S",
+    site: "https://aderirnos.com/",
+    title: "Aderir Pacotes",
     description: "Aderir Pacotes de Internet ao melhor preço de sempre.",
   },
 };
