@@ -1,6 +1,7 @@
 "use client";
 
 import { useFormStatus } from "react-dom";
+import { showNOSName } from "@/util/showNOSName";
 import styles from "@/components/submit-button/submit-button.module.css";
 
 export function SubmitButton() {
@@ -8,7 +9,7 @@ export function SubmitButton() {
 
   return (
     <button className={styles.button} disabled={pending} type="submit">
-      {pending ? "Enviando..." : "Aderir"}
+      {pending ? "Enviando..." : `Aderir  ${showNOSName && "N​O​S "}`}
     </button>
   );
 }

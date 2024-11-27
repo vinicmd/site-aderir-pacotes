@@ -2,6 +2,7 @@ import { Offer } from "@/util/protocols/offer";
 import Link from "next/link";
 import styles from "@/components/combo-description/combo-description.module.css";
 import localFont from "next/font/local";
+import { showNOSName } from "@/util/showNOSName";
 
 const azoFont = localFont({
   src: "AzoSans-Regular.woff2",
@@ -27,7 +28,7 @@ export const ComboDescription = (offer: Offer) => {
           </div>
           <div className={styles.buttonContainer}>
             <Link href="/contacto">
-              <div>Aderir</div>
+              <div>Aderir {showNOSName && "N​O​S "}</div>
             </Link>
           </div>
         </div>
