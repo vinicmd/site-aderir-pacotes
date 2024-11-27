@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
+import { showNOSName } from "@/util/showNOSName";
 
 const roboto = Roboto({ weight: "400", subsets: ["latin"] });
+
+const siteTitle = {showNOSName ? "Aderir Pacotes N​O​S" : "Aderir Pacotes" }
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://aderirpacotes.com"),
@@ -16,10 +19,10 @@ export const metadata: Metadata = {
     "NOS INTERNET",
     "nos tv net voz",
   ],
-  title: "Aderir Pacotes",
+  title: siteTitle,
   description: "Aderir Pacotes de Internet ao melhor preço de sempre.",
   openGraph: {
-    title: "Aderir Pacotes",
+    title: siteTitle,
     description: "Aderir Pacotes de Internet ao melhor preço de sempre.",
     url: "https://aderirnos.com/",
     type: "website",
@@ -27,7 +30,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "https://aderirnos.com/",
-    title: "Aderir Pacotes",
+    title: siteTitle,
     description: "Aderir Pacotes de Internet ao melhor preço de sempre.",
   },
 };
