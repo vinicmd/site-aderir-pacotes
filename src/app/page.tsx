@@ -113,7 +113,7 @@ export default function Home() {
         </div>
         <div className={styles.disclaimer}>
           <p>
-            Ofertas mediante pagamento por débito direto e ativação de fatura eletrônica
+            Ofertas mediante adesão por débito direto e fatura eletrônica
           </p>
         </div>
         {/* <div className={styles.title}>
