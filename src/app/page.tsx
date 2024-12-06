@@ -100,7 +100,6 @@ export default function Home() {
                 benefices={offer.benefices}
                 description={offer.description}
                 lastPrice={offer.lastPrice}
-                promo={offer.promo}
                 name={offer.name}
                 offerText={offer.offerText}
                 price={offer.price}
