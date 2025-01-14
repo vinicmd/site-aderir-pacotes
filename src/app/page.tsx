@@ -5,6 +5,8 @@ import styles from "@/app/page.module.css";
 import { EmailForm } from "@/components/email-form/email-form";
 import { Footer } from "@/components/footer/footer";
 import { showNOSName } from "@/util/showNOSName";
+import { CallFree } from "@/components/call-free/call-free";
+import Link from "next/link";
 
 const offersFiber = [
   {
@@ -109,9 +111,7 @@ export default function Home() {
           })}
         </div>
         <div className={styles.disclaimer}>
-          <p>
-            Ofertas mediante adesão por débito direto e fatura eletrônica
-          </p>
+          <p>Ofertas mediante adesão por débito direto e fatura eletrônica</p>
         </div>
         {/* <div className={styles.title}>
           <span>{`Pacotes ${showNOSName ? "N​O​S" : "de Internet"}`}</span>
@@ -137,6 +137,9 @@ export default function Home() {
           <EmailForm showMessage={false} />
         </div>
       </main>
+      <Link href="/aderir">
+        <CallFree />
+      </Link>
       <Footer />
     </Fragment>
   );

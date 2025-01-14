@@ -4,7 +4,7 @@ import { redirect } from "next/navigation";
 import { showNOSName } from "@/util/showNOSName";
 import { SubmitButton } from "../submit-button/submit-button";
 
-export const EmailForm = ({ showMessage = true }) => {
+export const EmailForm = ({ showMessage = true, aderir = false }) => {
   async function handleSendEmail(formData: FormData) {
     "use server";
 
@@ -23,8 +23,11 @@ export const EmailForm = ({ showMessage = true }) => {
 
   return (
     <section className={styles.email}>
-      {showMessage && <h2>Já temos {showNOSName && "N​O​S"} internet fibra na sua região!</h2>}
-      <p>Fale com um operador especializado.</p>
+      {showMessage && (
+        <h2>Já temos {showNOSName && "N​O​S"} internet fibra na sua região!</h2>
+      )}
+      {!aderir && <p>Fale com um operador especializado.</p>}
+      {aderir && <p>Para novos clientes ou adesão para segunda casa.</p>}
       <div className={styles.emailForm}>
         <form action={handleSendEmail}>
           <input placeholder="Nome" type="text" name="name" required />
@@ -37,7 +40,7 @@ export const EmailForm = ({ showMessage = true }) => {
             maxLength={9}
             minLength={9}
           />
-          <SubmitButton />
+          <SubmitButton callMe={aderir} />
         </form>
       </div>
     </section>
