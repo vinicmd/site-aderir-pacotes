@@ -24,7 +24,7 @@ export const Header = ({ isComplete = true }) => {
             />
           </Link>
           <div className={styles.contactContainer}>
-            <Link className={styles.contact} href="tel:935884616">
+            <Link className={styles.contact} href="tel:935706123">
               <Image
                 width={20}
                 height={20}
@@ -32,7 +32,7 @@ export const Header = ({ isComplete = true }) => {
                 className={styles.telephone}
                 alt="telephone icon"
               />{" "}
-              935 884 616
+              935 706 123
             </Link>
             {/* <p className={styles.openingHours}>
               Dias úteis: 10h às 22h / Outros: 10h às 22h
