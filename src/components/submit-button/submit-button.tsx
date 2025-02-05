@@ -11,7 +11,7 @@ export function SubmitButton({ callMe = false }) {
     <button className={styles.button} disabled={pending} type="submit">
       {pending
         ? "Enviando..."
-        : (callMe && "Ligue-me Grátis") || `Aderir  ${showNOSName && "N​O​S "}`}
+        : (callMe && "Ligue-me Grátis") || `Aderir  ${showNOSName ? "N​O​S": ""}`}
     </button>
   );
 }
