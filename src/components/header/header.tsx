@@ -5,6 +5,8 @@ import styles from "./header.module.css";
 import { PriceBox } from "../price-box/price-box";
 import { showNOSName } from "@/util/showNOSName";
 import { FormHeader } from "../formHeader/formHeader";
+import { CONSTANTS } from "@/util/constants";
+import { formatTelephone } from "@/util/format-telephone";
 
 export const Header = ({ isComplete = true }) => {
   async function handleForm(formData: FormData) {
@@ -24,7 +26,10 @@ export const Header = ({ isComplete = true }) => {
             />
           </Link>
           <div className={styles.contactContainer}>
-            <Link className={styles.contact} href="tel:935706123">
+            <Link
+              className={styles.contact}
+              href={`tel:${CONSTANTS.telephone}`}
+            >
               <Image
                 width={20}
                 height={20}
@@ -32,7 +37,7 @@ export const Header = ({ isComplete = true }) => {
                 className={styles.telephone}
                 alt="telephone icon"
               />{" "}
-              935 706 123
+              {formatTelephone(CONSTANTS.telephone)}
             </Link>
             {/* <p className={styles.openingHours}>
               Dias úteis: 10h às 22h / Outros: 10h às 22h
@@ -42,14 +47,15 @@ export const Header = ({ isComplete = true }) => {
         {isComplete && (
           <>
             <div className={styles.subtitle}>
-              <h1>
-                Aderir Pacotes de Internet {showNOSName && "N​O​S "}Fibra
-              </h1>
+              <h1>Aderir Pacotes de Internet {showNOSName && "N​O​S "}Fibra</h1>
             </div>
             <div className={styles.details}>
               <div className={styles.emailContainer}>
                 <div className={styles.emailBox}>
-                  <p>Testa a tua cobertura {showNOSName && "N​O​S "}e descobre se tens descontos especiais.</p>
+                  <p>
+                    Testa a tua cobertura {showNOSName && "N​O​S "}e descobre se
+                    tens descontos especiais.
+                  </p>
                   <FormHeader />
                 </div>
               </div>
