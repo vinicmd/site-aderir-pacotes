@@ -3,7 +3,7 @@ import { CONSTANTS } from "@/util/constants";
 import { formatTelephone } from "@/util/format-telephone";
 import Link from "next/link";
 export const Footer = () => {
-  const showFooter = true;
+  const showFooter = false;
   return (
     <footer className={styles.footer}>
       <div className={styles.main}>
