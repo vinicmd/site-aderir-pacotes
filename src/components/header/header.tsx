@@ -47,7 +47,7 @@ export const Header = ({ isComplete = true }) => {
         {isComplete && (
           <>
             <div className={styles.subtitle}>
-              <h1>Aderir Pacotes de Internet {showNOSName && "N​O​S "}Fibra</h1>
+              <h1>Aderir Pacotes de Internet {showNOSName && "N​O​S "}</h1>
             </div>
             <div className={styles.details}>
               <div className={styles.emailContainer}>
