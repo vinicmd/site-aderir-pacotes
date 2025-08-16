@@ -8,7 +8,7 @@ const roboto = Roboto({ weight: "400", subsets: ["latin"] });
 const description =
   `Aderir Pacotes de Internet ${showNOSName ? "N​O​S " : ''} - TV Net Voz - ao melhor preço. Na adesão a qualquer pacote de internet ${showNOSName ? "N​O​S " : ''} escolha a oferta da TV ou Telemóvel ou Tablet. Instalação em 24h/48h.`;
 const title = `Aderir Internet ${showNOSName ? "N​O​S " : ''}`;
-export const url = "https://aderirpacotes.com";
+const url = "https://aderirpacotes.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),
