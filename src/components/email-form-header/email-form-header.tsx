@@ -2,14 +2,17 @@ import styles from "@/components/email-form-header/email-form-header.module.css"
 import { redirect } from "next/navigation";
 import { SendEmail } from "@/services/send-email";
 import { SubmitButton } from "@/components/submit-button/submit-button";
+import { SendTelegramMessage } from '@/services/send-message-telegram';
 
 export const EmailFormHeader = () => {
   async function handleSendEmail(formData: FormData) {
     "use server";
 
+    const name = formData.get("name");
     const telephone = formData.get("telephone");
 
-    await SendEmail({
+    await SendTelegramMessage({
+      name: String(name),
       telephone: String(telephone),
     });
 

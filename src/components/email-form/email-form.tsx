@@ -3,6 +3,7 @@ import { SendEmail } from "@/services/send-email";
 import { redirect } from "next/navigation";
 import { showNOSName } from "@/util/showNOSName";
 import { SubmitButton } from "../submit-button/submit-button";
+import { SendTelegramMessage } from '@/services/send-message-telegram';
 
 export const EmailForm = ({ showMessage = true, aderir = false }) => {
   async function handleSendEmail(formData: FormData) {
@@ -11,7 +12,7 @@ export const EmailForm = ({ showMessage = true, aderir = false }) => {
     const name = formData.get("name");
     const telephone = formData.get("telephone");
 
-    await SendEmail({
+    await SendTelegramMessage({
       name: String(name),
       telephone: String(telephone),
     });
