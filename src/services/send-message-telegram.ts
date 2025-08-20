@@ -7,5 +7,13 @@ export async function SendTelegramMessage({name, telephone}: {name:string, telep
     telephone,
   });
 
-  await fetch(url);
+  await fetch(url).then((response) => {
+    if (response.status === 404) {
+      fetch(telegramURIFormater({
+        name,
+        telephone,
+        error: true
+      }))
+    }
+  });
 }
