@@ -46,7 +46,7 @@ const offersFiber = [
     lastPrice: "",
     price: "€47,49/mês",
     description:
-      "150 Canais + Box TV 4K + Net de 200Mbps ilimitada Fixo com chamadas incluídas + 1 cartão 10GB e 3500 Minutos/SMS",
+      "180 Canais + Box TV 4K + Net de 500MBps ilimitada + Fixo ilimitado + 1 cartão 200GB e 3500 Minutos/SMS",
     offerText: "Oferta de adesão disponível",
     benefices: "1 Mensalidade ou Portátil ou TV ou Smartphone",
   },
