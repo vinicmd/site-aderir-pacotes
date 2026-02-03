@@ -7,42 +7,35 @@ import { showNOSName } from "@/util/showNOSName";
 import { FormHeader } from "../formHeader/formHeader";
 import { CONSTANTS } from "@/util/constants";
 import { formatTelephone } from "@/util/format-telephone";
+import { triggerConversion } from "@/util/google-conversion";
+import { Phone } from "../phone/phone";
 
 export const Header = ({ isComplete = true }) => {
   async function handleForm(formData: FormData) {
     redirect("/obrigado");
   }
+
+  const handleClick = () => {
+    triggerConversion();
+  };
+
   return (
     <header className={styles.header}>
       <div className={styles.container}>
         <div className={styles.title}>
           <Link href="/">
             <Image
-              src={`${showNOSName ? '/assets/logo.svg' : '/assets/logo.png'}`}
+              src={`${showNOSName ? "/assets/logo.svg" : "/assets/logo.png"}`}
               className={styles.logo}
               alt="Logo"
               width={185}
               height={90}
             />
           </Link>
-          <div className={styles.contactContainer}>
-            <Link
-              className={styles.contact}
-              href={`tel:${CONSTANTS.telephone}`}
-            >
-              <Image
-                width={20}
-                height={20}
-                src="/assets/telephone.svg"
-                className={styles.telephone}
-                alt="telephone icon"
-              />{" "}
-              {formatTelephone(CONSTANTS.telephone)}
-            </Link>
-            {/* <p className={styles.openingHours}>
+          <Phone />
+          {/* <p className={styles.openingHours}>
               Dias úteis: 10h às 22h / Outros: 10h às 22h
             </p> */}
-          </div>
         </div>
         {isComplete && (
           <>
