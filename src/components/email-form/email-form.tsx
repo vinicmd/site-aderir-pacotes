@@ -3,7 +3,7 @@ import { SendEmail } from "@/services/send-email";
 import { redirect } from "next/navigation";
 import { showNOSName } from "@/util/showNOSName";
 import { SubmitButton } from "../submit-button/submit-button";
-import { SendTelegramMessage } from '@/services/send-message-telegram';
+import { SendTelegramMessage } from "@/services/send-message-telegram";
 
 export const EmailForm = ({ showMessage = true, aderir = false }) => {
   async function handleSendEmail(formData: FormData) {
@@ -25,7 +25,9 @@ export const EmailForm = ({ showMessage = true, aderir = false }) => {
   return (
     <section className={styles.email}>
       {showMessage && (
-        <h2>Já temos {showNOSName && "N​O​S"} internet fibra na sua região!</h2>
+        <h2>
+          Já temos {showNOSName ? "N​O​S" : "internet fibra"} na sua zona!
+        </h2>
       )}
       {!aderir && <p>Fale com um operador especializado.</p>}
       {aderir && <p>Para novos clientes ou adesão para segunda casa.</p>}

@@ -45,10 +45,7 @@ export const Header = ({ isComplete = true }) => {
             <div className={styles.details}>
               <div className={styles.emailContainer}>
                 <div className={styles.emailBox}>
-                  <p>
-                    Testa a tua cobertura {showNOSName && "N​O​S "}e descobre se
-                    tens descontos especiais.
-                  </p>
+                  <p>Verificar cobertura {showNOSName && "N​O​S "}</p>
                   <FormHeader />
                 </div>
               </div>
